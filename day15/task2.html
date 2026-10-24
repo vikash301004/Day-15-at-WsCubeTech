@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+ 
+        .box{
+            background-color: #2ecc71;
+            width:200px;
+            height:70px;
+            margin:40px auto;
+            border-radius:5px;
+            position:relative;
+        }
+        .box span{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: lightsalmon;
+            position: absolute;
+            top: -20px;
+            right: -10px;
+            transition: 400ms;
+        }
+        .box:hover span{
+            /* top: -15px; */
+            right: 0;
+        }
+        #arrow{
+            font-size: 40px;
+            top: 20%;
+            right: -20px;
+            z-index: -1;
+            position: absolute;
+            transition: 400ms;
+        }
+        .box:hover #arrow{
+            right: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+   <span></span>
+    </div>
+    <div class="box">
+        <i id="arrow" class="fa-solid fa-arrow-right"></i>
+         </div>
+</body>
+</html>

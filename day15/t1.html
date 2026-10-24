@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main{
+            width: 200px;
+            height: 400px;
+            position: relative;
+            margin: auto;
+            /* border: 1px solid red; */
+            /* overflow: hidden; */
+            transition-duration: 400ms;
+        }
+        .main img{
+            height: 100%;
+            width: 100%;
+        }
+        .c-1{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: 400ms;
+        }
+        .main:hover .c-1{
+         right: -100%;
+        }
+        .c-2{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 400ms;
+        }
+        .main:hover .c-2{
+         
+        bottom: -100%;
+         /* left: 100%; */
+        }
+        .c-3{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 400ms;
+        }
+        .main:hover .c-3{
+         /* overflow: visible; */
+         top: 0;
+         left: -100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <img class="c-1"  src="images/3.jpg" alt="">
+    <img class="c-2" src="images/4.jpg" alt="">
+    <img class="c-3" src="images/5.jpg" alt="">
+    <img src="images/1.jpg" alt="">
+    </div>
+</body>
+</html>
